@@ -18,7 +18,7 @@ var campgroundRoutes   =   require("./routes/campgrounds"),
 
 
 //mongoose.connect("mongodb://localhost:27017/yelp_camp_v12",{useNewUrlParser:true,useUnifiedTopology:true});
-mongoose.connect("mongodb+srv://Mayank:process.env.password@cluster0-dzpmq.mongodb.net/test?retryWrites=true&w=majority",{useNewUrlParser:true,useUnifiedTopology:true,useCreateIndex:true}).then(() =>{
+mongoose.connect("mongodb+srv://Mounika:process.env.password@cluster0-dzpmq.mongodb.net/test?retryWrites=true&w=majority",{useNewUrlParser:true,useUnifiedTopology:true,useCreateIndex:true}).then(() =>{
 	console.log("connected to db")}).catch(err=>{
 	console.log("ERROR : ",err.message)});
 
@@ -34,7 +34,7 @@ app.use(flash());
 //Passport configuration
 
 app.use(require("express-session")({
-	secret:"this is mayank",
+	secret:"this is mounika",
 	resave:false,
 	saveUninitialized:false
 }));
